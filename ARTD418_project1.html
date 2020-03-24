@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+			
+			.menu{
+				position: relative;
+				width: 50%;
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			.overlay {
+  			position: absolute;
+  			bottom: 100%;
+  			left: 0;
+  			right: 0;
+  			background-color: #FF1111;
+  			overflow: hidden;
+  			width: 100%;
+  			height:0;
+  			transition: .5s ease;
+			}
+			.menu:hover .overlay{
+				bottom: 0;
+				height: 100%;
+			}
+			.text{
+			color: white;
+  			font-size: 15px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			-webkit-transform: translate(-50%, -50%);
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+  			text-align: center;
+			}
+			{box-sizing: border-box}
+			.header{
+				background-color: #FF1111;
+			}
+
+			.about{
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+				color: white;
+				font-size: 20px;
+				width: 100%;
+				background-color: #FF1111;
+				text-align: center;
+				padding-bottom: 20px;
+			}
+			
+			body, html{
+				height: 100%;
+				margin: 0px;
+			}
+			.tablink {
+				background-color: #FF1111;
+				color: white;
+				float: left;
+				border: none; 
+				outline: none; 
+				cursor: pointer;
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+				font-size: 30px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				width: 50%;
+			}
+			.tablink:hover{
+				background-color: #FF7072;
+			}
+			.tabcontent {
+				color: #FF1111;
+				display: none;
+				height: 100%; 
+			}
+			#about {background-color: white;}
+			#menu {background-color: white;}
+			
+			.logo{
+				display: block;
+				margin: auto; 
+				width: 33%;
+				animation-iteration-count: infinite;
+			}
+			div.menu{
+				margin: 9px;
+				border: 2px solid #ccc;
+				float: left;
+				width: 31.5%;
+			}
+			
+			div.menu img {
+				width: 100%;
+				height: auto;
+			} 
+			div.name {
+				padding: 15px;
+				text-align: center;
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+				color: #FFFFFF;
+				background-color: #FF1111;
+			}
+			
+			.animation{
+				display: block;
+				margin: auto; 
+				width: 100%;
+				animation-iteration-count: infinite;
+			}
+		</style>
+    </head>
+    <body>
+		<button class="tablink" onClick="openPage('about')"
+				id="defaultOpen">ABOUT</button>
+		<button class="tablink" onClick="openPage('menu')">MENU</button>
+		
+		<div id="about" class="tabcontent">
+		<div class="about">
+		<div class="animation">
+			<video width="100%" autoplay>
+			<source src="noodles/ramen_animation.mp4" type="video/mp4">
+			</video>
+			</div>
+			<div class="info">
+			<p>We are a new Japanese-style restaurant located on the corner of 6th and Healey in Champaign. Our menu consists of the highest quality ingredients imported from Japan and the food is cooked to perfection by our amazing chefs.<br>The culture of our restaurant is really simple. We wish to provide the public a simple, cool, and modern place to dine at.<br><br><strong>601 S. Sixth Street, Suite 102, Champaign, Illinois</strong><br><br><strong>HOURS<br>Monday: 11am-9pm<br>Tuesday: 11am-9pm<br>Wednesday: 11am-9mp<br>Thursday: 11am-9pm<br>Friday: 11am-9:30pm<br>Saturday: 11am-9:30pm<br>Sunday: 11am-9:30pm</strong></p>
+			</div>
+		</div>
+		</div>                
+		
+        <div id="menu" class="tabcontent">
+			<header>
+			<div class="header">
+			<div class="logo">
+			<video width="400px" autoplay>
+			<source src="noodles/ramen_logo.mp4" type="video/mp4">
+			</video>
+				</div>
+				</div>
+		 </header>
+		
+			<div class="menu">
+			<a target="_blank" href="noodles/noodle1.png">
+			<img src="noodles/noodle1.png" alt="SHOYU" width="600px">
+				<div class="overlay">
+				<div class="text">soy broth<br>2 pc chashu (grilled pork belly)<br>nitamago (soft boiled egg)<br>menma (marinated bamboo shoot)<br>scallion<br>sesame<br>wakame seaweed<br>narutomaki (fish cake)<br>chili pepper<br>sesame oil</div>
+				</div>
+			</a>
+			<div class="name"><strong>SHOYU</strong> $12</div> 
+		</div>
+		
+		<div class="menu">
+		<a target="_blank" href="noodles/noodle2.png">
+			<img src="noodles/noodle2.png" alt="MISO" width="600px">
+			<div class="overlay">
+					<div class="text">miso broth<br>nitamago (soft boiled egg)<br>2 pc chashu (grilled pork belly)<br>narutomaki (fish cake)<br>kikurage (wood ear mushroom)<br>menma (marinated bamboo shoot)<br>sesame<br>scallion</div>
+					</div>
+			</a>
+			<div class="name"><strong>MISO</strong> $12</div>
+		</div>
+		
+		<div class="menu">
+		<a target="_blank" href="noodles/noodle3.png">
+			<img src="noodles/noodle3.png" alt="SHIO" width="600px">
+			<div class="overlay">
+					<div class="text">lite pork broth<br>2 pc chashu (grilled pork belly)<br>garj (pickled ginger)<br>menma (marinated bamboo shoot)<br>kikurage (wood ear mushroom)<br>narutomaki (fish cake)<br>scallion<br>sesame<br>nitamago (soft boiled egg)</div>
+					</div>
+			</a>
+			<div class="name"><strong>SHIO</strong> $12</div>
+		</div>
+		
+		<div class="menu">
+		<a target="_blank" href="noodles/noodle4.png">
+			<img src="noodles/noodle4.png" alt="TONKOTSU" width="600px">
+			<div class="overlay">
+					<div class="text">pork broth<br>2 pc chashu (grilled pork belly)<br>nitamago (soft boiled egg)<br>scallion<br>kikurage (wood ear mushroom)<br>menma (marinated bamboo shoot)<br>narutomaki (fish cake)<br>corn<br>sesame<br>chili pepper</div>
+					</div>
+			</a>
+			<div class="name"><strong>TONKOTSU</strong> $13</div>
+		</div>
+		
+		<div class="menu">
+		<a target="_blank" href="noodles/noodle5.png">
+			<img src="noodles/noodle6.png" alt="TONKOTSU BLACK" width="600px">
+			<div class="overlay">
+					<div class="text">enriched tonkotsu broth<br>2 pc chashu (grilled pork belly)<br>nitamago (soft boiled egg)<br>scallion<br>kikurage (wood ear mushroom)<br>menma (marinated bamboo shoot)<br>narutomaki (fish cake)<br>wakame seaweed<br>sesame<br>chili pepper<br>black sesame oil</div>
+					</div>
+			</a>
+			<div class="name"><strong>TONKOTSU BLACK</strong> $13</div>
+		</div>
+		
+		<div class="menu">
+		<a target="_blank" href="noodles/noodle6.png">
+			<img src="noodles/noodle6.png" alt="SPICY MISO" width="600px">
+			<div class="overlay">
+					<div class="text">miso broth<br>nanami togarashi (japanese spicy pepper)<br>nitamago (soft boiled egg)<br>2 pc chashu (grilled pork belly)<br>corn<br>kikurage (wood ear mushroom)<br>menma (marinated bamboo shoot)<br>sesame<br>scallion</div>
+					</div>
+			</a>
+			<div class="name"><strong>SPICY MISO</strong> $13</div>
+		</div>
+		</div>
+		
+		<script>
+		function openPage(pageName,elmnt,color) {
+  		var i, tabcontent, tablinks;
+  		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+  		}
+  		tablinks = document.getElementsByClassName("tablink");
+  		for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].style.backgroundColor = "";
+		}
+  		document.getElementById(pageName).style.display = "block";
+  		elmnt.style.backgroundColor = color;
+		}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+		</script>
+    </body>
+</html>
